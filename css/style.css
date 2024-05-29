@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.nombre {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.titulo {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.subtitulo {
+    font-size: 15px;
+}
+
+.menu-navegacion {
+    padding-top: 15px;
+}
+
+/* Carrusel Styles */
+.carrusel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carrusel-images img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carrusel-images img.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.presentacion {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.presentacion-h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 700;
+}
+
+.presentacion-h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor-titulo {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contacto {
+    margin-top: 20px;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+
+
