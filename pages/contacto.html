@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Productos</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/formularioContacto.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nombre">
+            <h1 class="titulo">Aljobra</h1>
+            <h2 class="subtitulo">Aberturas de aluminio</h2>
+        </div>
+        <nav class="menu-navegacion">
+            <a href="/index.html">Inicio</a>
+            <a href="/pages/contacto.html">Consulta sobre productos</a>
+        </nav>
+    </header>
+    <h1 class="tituloConsulta">Consulta sobre Productos</h1>
+    <form id="formularioConsulta" onsubmit="return validar()">
+        <label for="producto">Producto:</label>
+        <select id="producto" name="producto" required>
+            <option value="">Seleccione un producto</option>
+            <option value="aberturas">Aberturas de Aluminio</option>
+            <option value="mamparas">Mamparas</option>
+            <option value="vidrieria">Vidriería</option>
+        </select>
+        <span id="errorProducto" class="error"></span>
+        
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular" pattern="[1-9][0-9]{9}" required>
+        <span id="errorCelular" class="error"></span>
+        
+        <label for="medidas">Medidas (opcional):</label>
+        <input type="text" id="medidas" name="medidas">
+        
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" required></textarea>
+        <span id="errorConsulta" class="error"></span>
+        
+        <button class="botonFormulario" type="submit">Enviar</button>
+    </form>
+    <div id="mensajeExito" class="exito"></div>
+    <script src="/js/formularioContacto.js"></script>
+</body>
+</html>
